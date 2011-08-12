@@ -1,0 +1,33 @@
+A simple piece of phpcode
+that helps to manage a
+socket system and use them 
+
+
+tested on : 
+--->
+    php -v
+    PHP 5.3.3-1ubuntu9.1 with Suhosin-Patch (cli) (built: Oct 15 2010 14:17:04)
+    Copyright (c) 1997-2009 The PHP Group
+    Zend Engine v2.3.0, Copyright (c) 1998-2010 Zend Technologies
+        with Xdebug v2.1.0, Copyright (c) 2002-2010, by Derick Rethans
+--->
+    php5.3.0\php.exe -v
+    PHP 5.3.0 (cli) (built: Jun 29 2009 21:25:23)
+    Copyright (c) 1997-2009 The PHP Group
+    Zend Engine v2.3.0, Copyright (c) 1998-2009 Zend Technologies
+
+
+To run
+--->
+    linux : sudo php index.php
+--->
+    windows : php index.php
+
+see this file for example
+    index.php
+
+see this url for some help (?)
+    https://github.com/maboiteaspam/SocketManager/wiki
+
+
+Clément @ maboiteaspam

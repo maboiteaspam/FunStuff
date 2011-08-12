@@ -1,0 +1,52 @@
+WHAT IT IS FOR
+    A simple piece of php code that helps to manage a
+    background task, and get control on them
+
+KNOWN EQUIVALENT PROJECTS
+    Gearman, http://gearman.org/?id=gearman_php_extension
+            http://www.php.net/manual/fr/gearman.constants.php
+    Is much much much more advanced and better than mine
+        
+LIMITATIONS
+    It works only on linux, there is no equivalent for windows
+        To know why, have look to http://www.php.net/pcntl
+    It works only with cli process, don't try to do it with you Apache web server, it will hangs because of pcnt_fork's call
+
+THINGS TO KNOW
+    To re use forked process a memory holder is required,
+    to do so, given example (eg example-fork-reuser.php) makes use of a memcache server.
+    You may use a File System, or APC as sub layer
+    ** need to add an sql based layer **
+
+COMPATIBILITY
+    php -v
+    PHP 5.3.5-1ubuntu7.2 with Suhosin-Patch (cli) (built: May  2 2011 23:18:30)
+    Copyright (c) 1997-2009 The PHP Group
+    Zend Engine v2.3.0, Copyright (c) 1998-2010 Zend Technologies
+    with Xdebug v2.1.0, Copyright (c) 2002-2010, by Derick Rethans
+
+
+HOW TO RUN
+    --->
+        php example-fork.php
+
+    --->
+        sudo /etc/init.memcache restart
+            php example-fork-reuser.php
+
+CODE'S EXAMPLES
+    They are provided in those files
+        example-fork.php
+        example-fork-reuser.php
+
+    To present briefly
+        
+
+CURRENTLY IN PROGRESS
+    example-new-task-manager.php
+
+NEED HELP ?
+    Have a look on my github's wiki pages
+
+
+Clément @ maboiteaspam
